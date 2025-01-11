@@ -13,6 +13,11 @@ RUN echo 'sshd: all' >> /etc/hosts.deny
 RUN echo 'sshd: 49.96.0.0/12' >> /etc/hosts.allow
 
 #
+RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y wget
+RUN apt-get update && apt-get install -y git
+
+#
 RUN echo 'cd /' >> /root/.bashrc
 
 EXPOSE 22
