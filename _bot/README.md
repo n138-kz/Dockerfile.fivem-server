@@ -104,14 +104,14 @@ L-CxOxzJgCM2uiR3xhVK99uH8sIAd0b7
       "url": "{{serverJoinUrl}}"
     },
     {
-      "emoji": "1062339910654246964",
-      "label": "txAdmin Discord",
-      "url": "https://discord.gg/txAdmin"
-    },
-    {
       "emoji": "1022921146041122878",
       "label": "Connect txAdmin",
       "url": "http://172.18.1.2:40120"
+    },
+    {
+      "emoji": "1062339910654246964",
+      "label": "txAdmin Discord",
+      "url": "https://discord.gg/txAdmin"
     }
   ]
 }
