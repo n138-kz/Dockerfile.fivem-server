@@ -25,6 +25,7 @@ RUN echo 'sshd: all' >> /etc/hosts.deny
 RUN curl https://ipv4.fetus.jp/jp.txt | sed -e 's/^#.*//g' | grep -v '^$' | sed -e 's/^/sshd: /g' >> /etc/hosts.allow
 
 #
+WORKDIR /
 RUN echo 'cd /' >> /root/.bashrc
 
 EXPOSE 22
