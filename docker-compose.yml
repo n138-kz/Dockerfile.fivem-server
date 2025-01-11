@@ -1,0 +1,129 @@
+services:
+  fivem-fileshell:
+    container_name: fivem-fileshell
+    build:                                                                                        
+      context: ./build_fivem-fileshell
+      dockerfile: ./Dockerfile
+      args:
+        ROOT_PASSWORD: "${ROOT_PASSWORD:-ROOT_PASSWORD_123}"
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: Asia/Tokyo
+      LANG: "C"
+      LANGUAGE: "C"
+      LC_ALL: "C"
+    restart: on-failure
+    tty: true
+    tmpfs:
+      - /tmp
+    ports:
+      - "30000-65530:22"
+    volumes:
+      - type: volume
+        source: fivem-database
+        target: /var/lib/mysql
+        read_only: true
+      - type: volume
+        source: fivem-core-config
+        target: /config
+        read_only: false
+      - type: volume
+        source: fivem-core-txData
+        target: /txData
+        read_only: false
+    logging: 
+      driver: json-file
+      options:
+        max-size: "1024k"
+        max-file: "10"
+
+  fivem-database-admin:
+    container_name: fivem-database-admin
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: Asia/Tokyo
+      LANG: "C"
+      LANGUAGE: "C"
+      LC_ALL: "C"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-MYSQL_ROOT_PASSWORD_123}"
+      PMA_HOST: "fivem-database"
+      PMA_ARBITRARY: 1
+    restart: on-failure
+    tty: true
+    tmpfs:
+      - /run
+      - /tmp
+    ports:
+      - "30000-65530:80"
+    logging: 
+      driver: json-file
+      options:
+        max-size: "1024k"
+        max-file: "10"
+
+  fivem-database:
+    container_name: fivem-database
+    image: mysql
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: Asia/Tokyo
+      LANG: "C"
+      LANGUAGE: "C"
+      LC_ALL: "C"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-MYSQL_ROOT_PASSWORD_123}"
+    restart: always
+    tty: true
+    tmpfs:
+      - /run
+      - /tmp
+    volumes:
+      - type: volume
+        source: fivem-database
+        target: /var/lib/mysql
+    logging: 
+      driver: json-file
+      options:
+        max-size: "1024k"
+        max-file: "10"
+
+  fivem-core:
+    container_name: fivem-core
+    image: spritsail/fivem
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: Asia/Tokyo
+      LANG: "C"
+      LANGUAGE: "C"
+      LC_ALL: "C"
+      NO_DEFAULT_CONFIG: "1"
+    restart: always
+    ports:
+      - 30120:30120
+      - 30120:30120/udp
+      - 40120:40120
+    tty: true
+    tmpfs:
+      - /run
+      - /tmp
+    volumes:
+      - type: volume
+        source: fivem-core-config
+        target: /config
+      - type: volume
+        source: fivem-core-txData
+        target: /txData
+    logging: 
+      driver: json-file
+      options:
+        max-size: "1024k"
+        max-file: "10"
+
+volumes:
+  fivem-core-config:
+  fivem-core-txData:
+  fivem-database:
