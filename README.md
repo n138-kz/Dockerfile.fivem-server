@@ -44,6 +44,7 @@ cd Dockerfile/n138-kz/fivem-server/
 
 ```c:.env
 MYSQL_ROOT_PASSWORD="mysql-password"
+ROOT_PASSWORD="shroot-password"
 ```
 
 ## コンテナの生成と起動
@@ -84,7 +85,7 @@ docker compose down
 
 ### Github/README
 
-- [GitHubでQiitaの:::noteみたいな強調をする](https://qiita.com/lobmto/items/d02532134782f34c0e2fs)
+- [GitHubでQiitaの:::noteみたいな強調をする](https://qiita.com/lobmto/items/d02532134782f34c0e2f)
 
 ### fivem-core
 
@@ -110,10 +111,12 @@ find /txData -type f -name '*.lua' -exec sed -ie 's/SetTextFont(4)/SetTextFont(0
 
 ##### Postal Code Map & Minimap
 
+> [!WARNING]
+> セットアップ完了後（`/txData/QBCoreFramework_XXXXXX.base/`フォルダが生成された後）以降に実施すること
+
 ```sh
 cd /tmp && curl -OL 'https://www.dropbox.com/s/lb22r7rb4gwh44o/Postal%20Code%20Map.zip?dl=0' && unar Postal%20Code%20Map.zip && mv Postal%20Code%20Map/Server\ Resource/map /txData/QBCoreFramework_*.base/resources/
 ```
-
 
 ### fivem-database
 
