@@ -5,12 +5,7 @@ WORKDIR /tmp
 
 #
 WORKDIR /tmp
-RUN apt-get update && apt-get install -y curl
-RUN apt-get update && apt-get install -y wget
-RUN apt-get update && apt-get install -y git
-RUN apt-get update && apt-get install -y vi
-RUN apt-get update && apt-get install -y unar
-RUN apt-get update && apt-get install -y file
+RUN apt-get update && apt-get install -y curl wget git vim unar file
 
 # OpenSSH(SFTP server)
 WORKDIR /tmp
