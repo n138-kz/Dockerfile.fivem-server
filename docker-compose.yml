@@ -32,6 +32,10 @@ services:
         source: fivem-core-txData
         target: /txData
         read_only: false
+      - type: bind
+        source: ./assets/
+        target: /media
+        read_only: false
     logging: 
       driver: json-file
       options:
