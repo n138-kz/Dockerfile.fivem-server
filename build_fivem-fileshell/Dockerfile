@@ -1,5 +1,10 @@
 FROM ubuntu:latest
 
+#
+RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y wget
+RUN apt-get update && apt-get install -y git
+
 # OpenSSH(SFTP server)
 RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir -p /var/run/sshd
@@ -11,13 +16,6 @@ RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/
 
 RUN echo 'sshd: all' >> /etc/hosts.deny
 RUN echo 'sshd: 49.96.0.0/12' >> /etc/hosts.allow
-
-#
-RUN apt-get update && apt-get install -y curl
-RUN apt-get update && apt-get install -y wget
-RUN apt-get update && apt-get install -y git
-
-#
 RUN curl https://ipv4.fetus.jp/jp.txt | sed -e 's/^#.*//g' | grep -v '^$' | sed -e 's/^/sshd: /g' >> /etc/hosts.allow
 
 #
