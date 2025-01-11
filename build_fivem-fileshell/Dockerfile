@@ -13,7 +13,6 @@ ARG ROOT_PASSWORD
 ENV root_password=${ROOT_PASSWORD}
 RUN echo "root:${root_password}" | chpasswd
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-
 RUN echo 'sshd: all' >> /etc/hosts.deny
 RUN curl https://ipv4.fetus.jp/jp.txt | sed -e 's/^#.*//g' | grep -v '^$' | sed -e 's/^/sshd: /g' >> /etc/hosts.allow
 
