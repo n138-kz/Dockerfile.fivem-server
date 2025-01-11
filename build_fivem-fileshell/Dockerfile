@@ -18,6 +18,9 @@ RUN apt-get update && apt-get install -y wget
 RUN apt-get update && apt-get install -y git
 
 #
+RUN curl https://ipv4.fetus.jp/jp.txt | sed -e 's/^#.*//g' | grep -v '^$' | sed -e 's/^/sshd: /g' >> /etc/hosts.allow
+
+#
 RUN echo 'cd /' >> /root/.bashrc
 
 EXPOSE 22
