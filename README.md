@@ -108,5 +108,12 @@ find /txData -type f -name '*.lua' -exec sed -ie 's/SetTextFont(4)/SetTextFont(0
 
 - [【GTA5】FiveMサーバーのMOD導入方法を紹介します！【QBCore】](https://gamesv.agepote.jp/game-server/fivem-mod-install)
 
+##### Postal Code Map & Minimap
+
+```sh
+cd /tmp && curl -OL 'https://www.dropbox.com/s/lb22r7rb4gwh44o/Postal%20Code%20Map.zip?dl=0' && unar Postal%20Code%20Map.zip && mv Postal%20Code%20Map/Server\ Resource/map /txData/QBCoreFramework_*.base/resources/
+```
+
+
 ### fivem-database
 
