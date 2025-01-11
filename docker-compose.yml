@@ -1,7 +1,7 @@
 services:
   fivem-fileshell:
     container_name: fivem-fileshell
-    build:                                                                                        
+    build:
       context: ./build_fivem-fileshell
       dockerfile: ./Dockerfile
       args:
