@@ -153,10 +153,10 @@ docker compose down
 
 | Name | Price(Orig) | Price(JPN) | Tag | Download Src | Description |
 | ---- | ----------- | ---------- | --- | ------------ | ----------- |
-| [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | map | cfx.re | postal map |
+| [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | Map | cfx.re | postal map |
 | [ox_lib](https://github.com/overextended/ox_lib) | $0 | \0 | library | github | |
-| [bb-dices](https://github.com/BarBaroNN/bb-dices) | $0 | \0 | | github | |
-| [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | disableutil | github | |
+| [bb-dices](https://github.com/BarBaroNN/bb-dices) | $0 | \0 | Mini-game | github | |
+| [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | Disable-Util | github | |
 | [CL-ThermiteMission](https://github.com/NevoSwissa/CL-ThermiteMission) | $0 | \0 | Mission | github | |
 | [PolyZone](https://github.com/mkafrin/PolyZone) | $0 | \0 | | github | |
 | [TimeAndDateDisplay-FiveM](https://github.com/JokeDevil/TimeAndDateDisplay-FiveM) | $0 | \0 | | github | |
