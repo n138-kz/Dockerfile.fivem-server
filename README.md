@@ -154,6 +154,7 @@ docker compose down
 | Name | Price(Orig) | Price(JPN) | Tag | Download Src | Description |
 | ---- | ----------- | ---------- | --- | ------------ | ----------- |
 | [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | map | cfx.re | postal map |
+| [bb-dices](https://github.com/BarBaroNN/bb-dices) | $0 | \0 | | github | |
 | [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | disableutil | github | |
 | [CL-ThermiteMission](https://github.com/NevoSwissa/CL-ThermiteMission) | $0 | \0 | Mission | github | |
 | [PolyZone](https://github.com/mkafrin/PolyZone) | $0 | \0 | | github | |
@@ -162,7 +163,6 @@ docker compose down
 | [cd_drawtextui](https://forum.cfx.re/t/free-release-draw-text-ui/1885313) | $0 | \0 | | github | |
 | [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | |
 | [interact-sound](https://github.com/plunkettscott/interact-sound) | $0 | \0 | | github | |
-| [ox_lib](https://github.com/overextended/ox_lib) | $0 | \0 | | github | |
 | [VoiceRangeMarker](https://github.com/TomPecs/vrm) | $0 | \0 | | github | |
 
 
