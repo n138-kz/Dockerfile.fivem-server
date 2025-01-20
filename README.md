@@ -155,7 +155,7 @@ docker compose down
 | ---- | ----------- | ---------- | --- | ------------ | ----------- |
 | [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | Map | cfx.re | postal map |
 | [ox_lib](https://github.com/overextended/ox_lib) | $0 | \0 | library | github | |
-| [bb-dices](https://github.com/BarBaroNN/bb-dices) | $0 | \0 | Mini-game | github | |
+| [bb-dices](https://github.com/BarBaroNN/bb-dices) | $0 | \0 | Mini-game | github | サイコロ振り |
 | [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | Disable-Util | github | |
 | [CL-ThermiteMission](https://github.com/NevoSwissa/CL-ThermiteMission) | $0 | \0 | Mission | github | |
 | [PolyZone](https://github.com/mkafrin/PolyZone) | $0 | \0 | | github | |
