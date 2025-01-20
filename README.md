@@ -159,8 +159,8 @@ docker compose down
 | [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | Disable-Util | github | ラジオ無効 |
 | [CL-ThermiteMission](https://github.com/NevoSwissa/CL-ThermiteMission) | $0 | \0 | Mission | github | テルミットミッション |
 | [TimeAndDateDisplay-FiveM](https://github.com/JokeDevil/TimeAndDateDisplay-FiveM) | $0 | \0 | | github | 画面右上に日時を表示 |
-| [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | |
 | [cd_drawtextui](https://forum.cfx.re/t/free-release-draw-text-ui/1885313) | $0 | \0 | | github | 3DTextの最適化 |
+| [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | 燃料システム |
 | [interact-sound](https://github.com/plunkettscott/interact-sound) | $0 | \0 | | github | |
 | [VoiceRangeMarker](https://github.com/TomPecs/vrm) | $0 | \0 | | github | |
 | [Staxzs skateboard](https://forum.cfx.re/t/esx-qb-standalone-staxzs-skateboard/4863487/1) | €3 | \485.58 | | cfx.re | スケートボード |
