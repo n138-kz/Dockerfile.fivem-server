@@ -149,6 +149,14 @@ docker compose down
 
 ## mods(cfx/fivem)
 
+### Mods list
+
+| Name | Price(Orig) | Price(JPN) | Tag | Description |
+| ---- | ----------- | ---------- | --- | ----------- |
+| [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | map | postal map |
+
+
+
 ### QBCoreの日本語翻訳
 - [QBCoreの日本語翻訳](https://gamesv.agepote.jp/download/fivemserver-jp-translation)
 
