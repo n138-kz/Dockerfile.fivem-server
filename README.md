@@ -151,19 +151,19 @@ docker compose down
 
 ### Mods list
 
-| Name | Price(Orig) | Price(JPN) | Tag | Description |
-| ---- | ----------- | ---------- | --- | ----------- |
-| [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | map | postal map |
-| [CL-ThermiteMission]() | $0 | \0 | | |
-| [PolyZone]() | $0 | \0 | | |
-| [QB-Disable-Radio]() | $0 | \0 | | |
-| [TimeAndDateDisplay-FiveM]() | $0 | \0 | | |
-| [bb-dices]() | $0 | \0 | | |
-| [cd_drawtextui]() | $0 | \0 | | |
-| [cdn-fuel]() | $0 | \0 | | |
-| [interact-sound]() | $0 | \0 | | |
-| [ox_lib]() | $0 | \0 | | |
-| [vrm]() | $0 | \0 | | |
+| Name | Price(Orig) | Price(JPN) | Tag | Download Src | Description |
+| ---- | ----------- | ---------- | --- | ------------ | ----------- |
+| [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | map | cfx.re | postal map |
+| [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | disableutil | github | |
+| [CL-ThermiteMission]() | $0 | \0 | | github | |
+| [PolyZone]() | $0 | \0 | | github | |
+| [TimeAndDateDisplay-FiveM]() | $0 | \0 | | github | |
+| [bb-dices]() | $0 | \0 | | github | |
+| [cd_drawtextui]() | $0 | \0 | | github | |
+| [cdn-fuel]() | $0 | \0 | | github | |
+| [interact-sound]() | $0 | \0 | | github | |
+| [ox_lib]() | $0 | \0 | | github | |
+| [vrm]() | $0 | \0 | | github | |
 
 
 ### QBCoreの日本語翻訳
