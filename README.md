@@ -36,8 +36,8 @@
 1. Compose ファイル を編集する。
 
 ```bash
-git clone https://github.com/n138-kz/Dockerfile.git
-cd Dockerfile/n138-kz/fivem-server/
+git clone https://github.com/n138-kz/fivem-server
+cd fivem-server/
 ```
 
 2. 環境変数ファイル（ファイル名： `.env` ） を作成・編集する。（詳細は公式ドキュメントを参照）

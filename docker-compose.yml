@@ -5,7 +5,7 @@ services:
       context: ./build_fivem-fileshell
       dockerfile: ./Dockerfile
       args:
-        ROOT_PASSWORD: "${ROOT_PASSWORD:-ROOT_PASSWORD_123}"
+        ROOT_PASSWORD: "${ROOT_PASSWORD:-shroot-password}"
     environment:
       PUID: 1000
       PGID: 1000
@@ -52,7 +52,7 @@ services:
       LANG: "C"
       LANGUAGE: "C"
       LC_ALL: "C"
-      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-MYSQL_ROOT_PASSWORD_123}"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-mysql-password}"
       PMA_HOST: "fivem-database"
       PMA_ARBITRARY: 1
     restart: on-failure
@@ -78,7 +78,7 @@ services:
       LANG: "C"
       LANGUAGE: "C"
       LC_ALL: "C"
-      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-MYSQL_ROOT_PASSWORD_123}"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-mysql-password}"
     restart: always
     tty: true
     tmpfs:
