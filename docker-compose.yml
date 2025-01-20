@@ -34,7 +34,7 @@ services:
         read_only: false
       - type: bind
         source: ./assets/
-        target: /media
+        target: /media/fivem-setup
         read_only: false
     logging: 
       driver: json-file
@@ -123,7 +123,7 @@ services:
         target: /txData
       - type: bind
         source: assets/
-        target: /tmp/fivem-setup
+        target: /media/fivem-setup
     logging: 
       driver: json-file
       options:
