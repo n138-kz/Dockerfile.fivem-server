@@ -90,10 +90,10 @@ docker compose up -d --build
 
 	- [あとからmod導入](#modscfxfivem)する場合は `/txData/QBCoreFramework_*.base/resources/` 配下に置く
 	- セットアップ時にmod追加する場合は以下（メジャーmodのみ記載）
-	`# Clean up`(だいたい422行目付近) より前に記載する
 
 	- Postal Code Map & Minimap
 
+	1. Review Recipe に下記追記(`# Clean up`(だいたい422行目付近) より前に記載する)
 	```text
 	- action: download_file
 	path: ./tmp/Postal_Code_Map.zip
@@ -101,6 +101,11 @@ docker compose up -d --build
 	- action: unzip
 	dest: ./resources/[mods]/menu
 	src: ./tmp/Postal_Code_Map.zip
+	```
+
+	2. server.cfg に下記追加
+	```
+	ensure [mods]
 	```
 
 ## コンテナ停止
