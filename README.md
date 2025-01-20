@@ -35,26 +35,42 @@
 
 1. Compose ファイル を編集する。
 
-```bash
-git clone https://github.com/n138-kz/fivem-server
-cd fivem-server/
-```
+	```bash
+	git clone https://github.com/n138-kz/fivem-server
+	cd fivem-server/
+	```
 
 2. 環境変数ファイル（ファイル名： `.env` ） を作成・編集する。（詳細は公式ドキュメントを参照）
 
-```c:.env
-MYSQL_ROOT_PASSWORD="mysql-password"
-ROOT_PASSWORD="shroot-password"
-```
+	```c:.env
+	MYSQL_ROOT_PASSWORD="mysql-password"
+	ROOT_PASSWORD="shroot-password"
+	```
 
-## コンテナの生成と起動
+3. コンテナの生成と起動
 
 ```bash
-docker compose up -d --build
+docker compose up -d --build 
 ```
 
 > [!TIP]
-> `docker compose logs -f` を実行して、`Done (*.***s)! For help, type "help"` が表示されれば起動完了。
+> `docker compose logs -f` を実行して、下記 が表示されれば起動完了。（初回起動時のみ）
+>
+> ```sh
+> docker compose logs -f
+> ```
+> ```
+> ┌────────────────────────────────────┐
+> │                                    │
+> │     All ready! Please access:      │
+> │    http://your-public-ip:40120/    │
+> │    http://203.0.113.100:40120/     │
+> │                                    │
+> │   Use the PIN below to register:   │
+> │                0001                │
+> │                                    │
+> └────────────────────────────────────┘
+> ```
 
 ## コンテナ停止
 
