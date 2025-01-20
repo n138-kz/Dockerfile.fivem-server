@@ -157,7 +157,6 @@ docker compose down
 | [ox_lib](https://github.com/overextended/ox_lib) | $0 | \0 | library | github | |
 | [bb-dices](https://github.com/BarBaroNN/bb-dices) | $0 | \0 | Mini-game | github | サイコロ振り |
 | [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | Disable-Util | github | ラジオ無効 |
-| [PolyZone](https://github.com/mkafrin/PolyZone) | $0 | \0 | | github | |
 | [CL-ThermiteMission](https://github.com/NevoSwissa/CL-ThermiteMission) | $0 | \0 | Mission | github | テルミットミッション |
 | [TimeAndDateDisplay-FiveM](https://github.com/JokeDevil/TimeAndDateDisplay-FiveM) | $0 | \0 | | github | |
 | [cd_drawtextui](https://forum.cfx.re/t/free-release-draw-text-ui/1885313) | $0 | \0 | | github | |
