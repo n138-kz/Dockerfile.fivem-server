@@ -63,7 +63,10 @@ docker compose down
 ```
 
 > [!IMPORTANT]
-> ワールドデータは永続保持される設定のため、サーバ再構築などデータをすべて初期化する場合は、`docker compose down --rmi all --volumes --remove-orphans` を実行する。
+> ワールドデータは永続保持される設定のため、サーバ再構築などデータをすべて初期化する場合は、下記コマンド を実行する。
+> ```
+> docker compose down --rmi all --volumes --remove-orphans
+> ```
 
 > [!CAUTION]
 > `docker compose down --rmi all --volumes --remove-orphans` はワールドデータも削除するため、取り扱いには十分注意すること。
