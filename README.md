@@ -158,7 +158,7 @@ docker compose down
 | [bb-dices](https://github.com/BarBaroNN/bb-dices) | $0 | \0 | Mini-game | github | サイコロ振り |
 | [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | Disable-Util | github | ラジオ無効 |
 | [CL-ThermiteMission](https://github.com/NevoSwissa/CL-ThermiteMission) | $0 | \0 | Mission | github | テルミットミッション |
-| [TimeAndDateDisplay-FiveM](https://github.com/JokeDevil/TimeAndDateDisplay-FiveM) | $0 | \0 | | github | |
+| [TimeAndDateDisplay-FiveM](https://github.com/JokeDevil/TimeAndDateDisplay-FiveM) | $0 | \0 | | github | 画面右上に日時を表示 |
 | [cd_drawtextui](https://forum.cfx.re/t/free-release-draw-text-ui/1885313) | $0 | \0 | | github | |
 | [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | |
 | [interact-sound](https://github.com/plunkettscott/interact-sound) | $0 | \0 | | github | |
