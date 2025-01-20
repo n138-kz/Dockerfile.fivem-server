@@ -121,6 +121,9 @@ services:
       - type: volume
         source: fivem-core-txData
         target: /txData
+      - type: bind
+        source: assets/
+        target: /tmp/fivem-setup
     logging: 
       driver: json-file
       options:
