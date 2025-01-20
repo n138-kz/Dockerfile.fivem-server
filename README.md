@@ -90,9 +90,12 @@ docker compose up -d --build
 
 	- [あとからmod導入](#modscfxfivem)する場合は `/txData/QBCoreFramework_*.base/resources/` 配下に置く
 	- セットアップ時にmod追加する場合は以下（メジャーmodのみ記載）
-
-	- [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458)
-
+	
+	<details>
+		<summary>動作しないけどこの書式のはず（Bad Archive）</summary>
+		
+		- [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458)
+	
 		1. Review Recipe に下記追記
 		- `# Clean up`(だいたい422行目付近) より前に記載する
 		- yamlの書式に合わせ記載する（インデントなど）
@@ -110,6 +113,7 @@ docker compose up -d --build
 		```
 		ensure [mods]
 		```
+	</details>
 
 ## コンテナ停止
 
