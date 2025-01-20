@@ -96,11 +96,11 @@ docker compose up -d --build
 		1. Review Recipe に下記追記(`# Clean up`(だいたい422行目付近) より前に記載する)
 		```text
 		- action: download_file
-		path: ./tmp/Postal_Code_Map.zip
-		url: https://www.dropbox.com/s/lb22r7rb4gwh44o/Postal%20Code%20Map.zip
+		  path: ./tmp/Postal_Code_Map.zip
+		  url: https://www.dropbox.com/s/lb22r7rb4gwh44o/Postal%20Code%20Map.zip
 		- action: unzip
-		dest: ./resources/[mods]/menu
-		src: ./tmp/Postal_Code_Map.zip
+		  dest: ./resources/[mods]/menu
+		  src: ./tmp/Postal_Code_Map.zip
 		```
 
 		2. server.cfg に下記追加
