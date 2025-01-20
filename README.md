@@ -163,6 +163,7 @@ docker compose down
 | [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | |
 | [interact-sound](https://github.com/plunkettscott/interact-sound) | $0 | \0 | | github | |
 | [VoiceRangeMarker](https://github.com/TomPecs/vrm) | $0 | \0 | | github | |
+| [Staxzs skateboard](https://forum.cfx.re/t/esx-qb-standalone-staxzs-skateboard/4863487/1) | €3 | \485.58 | | cfx.re | スケートボード |
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
 
