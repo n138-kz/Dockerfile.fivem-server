@@ -85,6 +85,20 @@ docker compose down
 4. Input the server display name & passing the Captcha then click `Generate`.
 5. Copy Key to clipboard on the local pc.
 
+## mods(cfx/fivem)
+
+### QBCoreの日本語翻訳
+- [QBCoreの日本語翻訳](https://gamesv.agepote.jp/download/fivemserver-jp-translation)
+
+### Postal Code Map & Minimap
+
+> [!WARNING]
+> セットアップ完了後（`/txData/QBCoreFramework_XXXXXX.base/`フォルダが生成された後）以降に実施すること
+
+```sh
+cd /tmp && curl -OL 'https://www.dropbox.com/s/lb22r7rb4gwh44o/Postal%20Code%20Map.zip?dl=0' && unar Postal%20Code%20Map.zip && mv Postal%20Code%20Map/Server\ Resource/map /txData/QBCoreFramework_*.base/resources/
+```
+
 ## 参考
 
 ### docker-compose
@@ -113,18 +127,4 @@ docker compose down
 find /txData -type f -name '*.lua' -exec sed -ie 's/SetTextFont(4)/SetTextFont(0)/g' {} \;;
 ```
 
-#### mods
-
-- [QBCoreの日本語翻訳](https://gamesv.agepote.jp/download/fivemserver-jp-translation)
-
-##### Postal Code Map & Minimap
-
-> [!WARNING]
-> セットアップ完了後（`/txData/QBCoreFramework_XXXXXX.base/`フォルダが生成された後）以降に実施すること
-
-```sh
-cd /tmp && curl -OL 'https://www.dropbox.com/s/lb22r7rb4gwh44o/Postal%20Code%20Map.zip?dl=0' && unar Postal%20Code%20Map.zip && mv Postal%20Code%20Map/Server\ Resource/map /txData/QBCoreFramework_*.base/resources/
-```
-
 ### fivem-database
-
