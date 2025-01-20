@@ -77,6 +77,14 @@ docker compose down
 | 40120       | 40120      | TxAdmin        | true     | 
 | 30000-65535 | 80         | MySQL Admin    | true     | 
 
+## License Key
+
+1. Jump to [Cfx.re Keymaster](https://keymaster.fivem.net/login)
+2. Signin your account.
+3. `Server Owners` > `New server`
+4. Input the server display name & passing the Captcha then click `Generate`.
+5. Copy Key to clipboard on the local pc.
+
 ## 参考
 
 ### docker-compose
