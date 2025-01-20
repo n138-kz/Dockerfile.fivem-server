@@ -154,7 +154,16 @@ docker compose down
 | Name | Price(Orig) | Price(JPN) | Tag | Description |
 | ---- | ----------- | ---------- | --- | ----------- |
 | [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | map | postal map |
-
+| [CL-ThermiteMission-main]() | $0 | \0 | | |
+| [PolyZone-master]() | $0 | \0 | | |
+| [QB-Disable-Radio-master]() | $0 | \0 | | |
+| [TimeAndDateDisplay-FiveM-main]() | $0 | \0 | | |
+| [bb-dices]() | $0 | \0 | | |
+| [cd_drawtextui]() | $0 | \0 | | |
+| [cdn-fuel]() | $0 | \0 | | |
+| [interact-sound-master]() | $0 | \0 | | |
+| [ox_lib-master]() | $0 | \0 | | |
+| [vrm-main]() | $0 | \0 | | |
 
 
 ### QBCoreの日本語翻訳
