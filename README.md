@@ -165,7 +165,6 @@ docker compose down
 | [interact-sound](https://github.com/plunkettscott/interact-sound) | $0 | \0 | | github | |
 | [VoiceRangeMarker](https://github.com/TomPecs/vrm) | $0 | \0 | | github | |
 
-
 ### QBCoreの日本語翻訳
 - [QBCoreの日本語翻訳](https://gamesv.agepote.jp/download/fivemserver-jp-translation)
 
