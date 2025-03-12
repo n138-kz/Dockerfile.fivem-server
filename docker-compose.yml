@@ -96,7 +96,7 @@ services:
 
   fivem-core:
     container_name: fivem-core
-    image: spritsail/fivem:13337
+    image: spritsail/fivem:${txadmin_version:-latest}
     environment:
       PUID: 1000
       PGID: 1000
