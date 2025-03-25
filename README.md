@@ -163,6 +163,7 @@ docker compose down
 | [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | 燃料システム |
 | [VoiceRangeMarker](https://github.com/TomPecs/vrm) | $0 | \0 | | github | ボイスチャットの範囲を段階的に切り替える |
 | [Staxzs skateboard](https://forum.cfx.re/t/esx-qb-standalone-staxzs-skateboard/4863487/1) | €3 (EUR) | \485.58 | | cfx.re | スケートボード |
+| [pma-voice](https://github.com/AvarianKnight/pma-voice/releases/tag/v6.6.2) | $0 | \0 | | github | 声の範囲 |
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
 
