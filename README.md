@@ -8,28 +8,23 @@
 コンテナ型仮想環境で、FiveMサーバーを構築します。  
 使用するコンテナイメージは Docker 社が運営する公開レジストリの Docker Hub から取得します。  
 
-## 事前準備
+## 使用機材
 
-デバイスやソフトウェアは以下を用いる。  
-
-- サーバ機（Ubuntu Server、Docker）
 - Docker Hub
-	- [mysql](https://hub.docker.com/_/mysql)
-	- [spritsail/fivem](https://hub.docker.com/r/spritsail/fivem)
+	- [fivem-fileshell](https://hub.docker.com/_/ubuntu/tags#latest)
+	- [fivem-database](https://hub.docker.com/_/mysql#latest)
+	- [fivem-database-admin](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
+	- [fivem-core](https://hub.docker.com/r/spritsail/fivem)
 
-1. Docker のインストール
-    
-	[インストール方法](https://docs.docker.jp/engine/installation/linux/index.html)  
+<details>
 
-	<details>
-		<summary>Tips for collapsed sections</summary>
+	<summary>Tips for collapsed sections</summary>
 
-	</details>
+	1. Docker のインストール
+		
+		[インストール方法](https://docs.docker.jp/engine/installation/linux/index.html)  
 
-3. データ格納用ディレクトリの用意
-
-> [!IMPORTANT]
-> 以降のコマンド操作は設定したディレクトリで行うものとする。
+</details>
 
 ## コンテナ作成
 
@@ -45,6 +40,7 @@
 	```c:.env
 	MYSQL_ROOT_PASSWORD="mysql-password"
 	ROOT_PASSWORD="shroot-password"
+	txadmin_version="13227"
 	```
 
 3. コンテナの生成と起動
