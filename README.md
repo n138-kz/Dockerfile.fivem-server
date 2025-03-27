@@ -17,37 +17,45 @@
 	- [fivem-core](https://hub.docker.com/r/spritsail/fivem)
 
 <details>
+<summary>Tips for collapsed sections</summary>
 
-	<summary>Tips for collapsed sections</summary>
+1. Docker のインストール
 
-	1. Docker のインストール
-		
-		[インストール方法](https://docs.docker.jp/engine/installation/linux/index.html)  
+[インストール方法](https://docs.docker.jp/engine/installation/linux/index.html)  
 
-</details>
-
-## コンテナ作成
 
 1. Compose ファイル を編集する。
 
-	```bash
-	git clone https://github.com/n138-kz/fivem-server
-	cd fivem-server/
-	```
+```sh
+git clone https://github.com/n138-kz/fivem-server
+cd fivem-server/
+```
+```sh
+docker pull ubuntu
+docker pull mysql
+docker pull phpmyadmin/phpmyadmin
+docker pull spritsail/fivem
+docker pull spritsail/fivem:13227
+```
+
 
 2. 環境変数ファイル（ファイル名： `.env` ） を作成・編集する。（詳細は公式ドキュメントを参照）
 
-	```c:.env
-	MYSQL_ROOT_PASSWORD="mysql-password"
-	ROOT_PASSWORD="shroot-password"
-	txadmin_version="13227"
-	```
+```c:.env
+MYSQL_ROOT_PASSWORD="mysql-password"
+ROOT_PASSWORD="shroot-password"
+txadmin_version="13227"
+```
+
 
 3. コンテナの生成と起動
 
-```bash
+```sh
 docker compose up -d --build 
 ```
+
+
+</details>
 
 > [!TIP]
 > `docker compose logs -f` を実行して、下記 が表示されれば起動完了。（初回起動時のみ）
@@ -63,7 +71,7 @@ docker compose up -d --build
 > │    http://203.0.113.100:40120/     │
 > │                                    │
 > │   Use the PIN below to register:   │
-> │                0001                │
+> │                0000                │
 > │                                    │
 > └────────────────────────────────────┘
 > ```
