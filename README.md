@@ -16,8 +16,6 @@
 	- [fivem-database-admin](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
 	- [fivem-core](https://hub.docker.com/r/spritsail/fivem)
 
-<details>
-<summary>Tips for collapsed sections</summary>
 
 1. Docker のインストール
 
@@ -39,7 +37,7 @@ docker pull spritsail/fivem:13227
 ```
 
 
-2. 環境変数ファイル（ファイル名： `.env` ） を作成・編集する。（詳細は公式ドキュメントを参照）
+1. 環境変数ファイル（ファイル名： `.env` ） を作成・編集する。（詳細は公式ドキュメントを参照）
 
 ```c:.env
 MYSQL_ROOT_PASSWORD="mysql-password"
@@ -48,14 +46,12 @@ txadmin_version="13227"
 ```
 
 
-3. コンテナの生成と起動
+1. コンテナの生成と起動
 
 ```sh
 docker compose up -d --build 
 ```
 
-
-</details>
 
 > [!TIP]
 > `docker compose logs -f` を実行して、下記 が表示されれば起動完了。（初回起動時のみ）
@@ -76,19 +72,20 @@ docker compose up -d --build
 > └────────────────────────────────────┘
 > ```
 
-4. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
 
-	1. txadminにアクセス
-	- [http://your-public-ip:40120/](http://203.0.113.100:40120)
-	- [http://203.0.113.100:40120/](http://203.0.113.100:40120)
+1. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
 
-	2. コンソールに表示されているPINコードを入力して、`Link Account`を押下する
-	3. Cfx.reにログインする。（すでにログインしている場合は`CONTINUE`を押下）
-	4. `Discord ID`と`Backup Password`を入力し、利用規約同意にチェックし、`Register`押下
+1. txadminにアクセス
+- [http://your-public-ip:40120/](http://your-public-ip:40120)
+- [http://203.0.113.100:40120/](http://203.0.113.100:40120)
 
-	> [!TIP]
-	> - [Where can I find my User/Server/Message ID?](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
-	> - [ユーザー/サーバー/メッセージIDはどこで見つけられる？](https://support.discord.com/hc/ja/articles/206346498-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8ID%E3%81%AF%E3%81%A9%E3%81%93%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%89%E3%82%8C%E3%82%8B)
+1. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
+1. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
+1. `Discord ID` と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
+
+> [!TIP]
+> - [Where can I find my User/Server/Message ID?](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
+> - [ユーザー/サーバー/メッセージIDはどこで見つけられる？](https://support.discord.com/hc/ja/articles/206346498-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8ID%E3%81%AF%E3%81%A9%E3%81%93%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%89%E3%82%8C%E3%82%8B)
 
 5. `Review Recipe` で追加するmodを記載する
 
