@@ -21,19 +21,16 @@ https://discord.com/oauth2/authorize?client_id=1305300608408096890
 ### Public Key
 
 ```text
-5602dac06edf00dfa14503db8ce0e475eb15f9d07b67833e168804904f9a244d
 ```
 
 ### Token
 
 ```text
-MTMwNTMwMDYwODQwODA5Njg5MA.GxHom0.4HLC2eWJfNQePY4g20-DkLAX6qfj1kXLAFzG9s
 ```
 
 ### Client Secret
 
 ```text
-L-CxOxzJgCM2uiR3xhVK99uH8sIAd0b7
 ```
 
 ### Guild/Server ID
