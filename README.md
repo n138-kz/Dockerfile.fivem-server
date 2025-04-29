@@ -44,6 +44,7 @@ MYSQL_ROOT_PASSWORD="mysql-password"
 ROOT_PASSWORD="shroot-password"
 txadmin_version="13227"
 ```
+[txadmin:build:13227](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)
 
 
 1. コンテナの生成と起動
