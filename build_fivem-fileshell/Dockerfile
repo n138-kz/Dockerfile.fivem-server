@@ -1,14 +1,8 @@
 FROM ubuntu:latest
 
-#
-WORKDIR /tmp
-
-#
-WORKDIR /tmp
-RUN apt-get update && apt-get install -y curl wget git vim unar file
-
 # OpenSSH(SFTP server)
 WORKDIR /tmp
+RUN apt-get update && apt-get install -y curl wget git vim unar file
 RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir -p /var/run/sshd
 RUN ln -s /var/run/sshd /run/sshd
@@ -24,5 +18,4 @@ WORKDIR /
 RUN echo 'cd /' >> /root/.bashrc
 
 EXPOSE 22
-
 CMD ["/usr/sbin/sshd", "-D"]

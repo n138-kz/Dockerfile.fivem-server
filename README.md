@@ -8,50 +8,50 @@
 コンテナ型仮想環境で、FiveMサーバーを構築します。  
 使用するコンテナイメージは Docker 社が運営する公開レジストリの Docker Hub から取得します。  
 
-## 事前準備
+## 使用機材
 
-デバイスやソフトウェアは以下を用いる。  
-
-- サーバ機（Ubuntu Server、Docker）
 - Docker Hub
-	- [mysql](https://hub.docker.com/_/mysql)
-	- [spritsail/fivem](https://hub.docker.com/r/spritsail/fivem)
+	- [fivem-fileshell](https://hub.docker.com/_/ubuntu/tags#latest)
+	- [fivem-database](https://hub.docker.com/_/mysql#latest)
+	- [fivem-database-admin](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
+	- [fivem-core](https://hub.docker.com/r/spritsail/fivem)
+
 
 1. Docker のインストール
-    
-	[インストール方法](https://docs.docker.jp/engine/installation/linux/index.html)  
 
-	<details>
-		<summary>Tips for collapsed sections</summary>
+[インストール方法](https://docs.docker.jp/engine/installation/linux/index.html)  
 
-	</details>
-
-3. データ格納用ディレクトリの用意
-
-> [!IMPORTANT]
-> 以降のコマンド操作は設定したディレクトリで行うものとする。
-
-## コンテナ作成
 
 1. Compose ファイル を編集する。
 
-	```bash
-	git clone https://github.com/n138-kz/fivem-server
-	cd fivem-server/
-	```
+```sh
+git clone https://github.com/n138-kz/fivem-server
+cd fivem-server/
+```
+```sh
+docker pull ubuntu
+docker pull mysql
+docker pull phpmyadmin/phpmyadmin
+docker pull spritsail/fivem
+docker pull spritsail/fivem:13227
+```
 
-2. 環境変数ファイル（ファイル名： `.env` ） を作成・編集する。（詳細は公式ドキュメントを参照）
 
-	```c:.env
-	MYSQL_ROOT_PASSWORD="mysql-password"
-	ROOT_PASSWORD="shroot-password"
-	```
+1. 環境変数ファイル（ファイル名： `.env` ） を作成・編集する。（詳細は公式ドキュメントを参照）
 
-3. コンテナの生成と起動
+```c:.env
+MYSQL_ROOT_PASSWORD="mysql-password"
+ROOT_PASSWORD="shroot-password"
+txadmin_version="13227"
+```
 
-```bash
+
+1. コンテナの生成と起動
+
+```sh
 docker compose up -d --build 
 ```
+
 
 > [!TIP]
 > `docker compose logs -f` を実行して、下記 が表示されれば起動完了。（初回起動時のみ）
@@ -67,24 +67,25 @@ docker compose up -d --build
 > │    http://203.0.113.100:40120/     │
 > │                                    │
 > │   Use the PIN below to register:   │
-> │                0001                │
+> │                0000                │
 > │                                    │
 > └────────────────────────────────────┘
 > ```
 
-4. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
 
-	1. txadminにアクセス
-	- [http://your-public-ip:40120/](http://203.0.113.100:40120)
-	- [http://203.0.113.100:40120/](http://203.0.113.100:40120)
+1. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
 
-	2. コンソールに表示されているPINコードを入力して、`Link Account`を押下する
-	3. Cfx.reにログインする。（すでにログインしている場合は`CONTINUE`を押下）
-	4. `Discord ID`と`Backup Password`を入力し、利用規約同意にチェックし、`Register`押下
+1. txadminにアクセス
+- [http://your-public-ip:40120/](http://your-public-ip:40120)
+- [http://203.0.113.100:40120/](http://203.0.113.100:40120)
 
-	> [!TIP]
-	> - [Where can I find my User/Server/Message ID?](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
-	> - [ユーザー/サーバー/メッセージIDはどこで見つけられる？](https://support.discord.com/hc/ja/articles/206346498-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8ID%E3%81%AF%E3%81%A9%E3%81%93%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%89%E3%82%8C%E3%82%8B)
+1. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
+1. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
+1. `Discord ID` と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
+
+> [!TIP]
+> - [Where can I find my User/Server/Message ID?](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
+> - [ユーザー/サーバー/メッセージIDはどこで見つけられる？](https://support.discord.com/hc/ja/articles/206346498-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8ID%E3%81%AF%E3%81%A9%E3%81%93%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%89%E3%82%8C%E3%82%8B)
 
 5. `Review Recipe` で追加するmodを記載する
 
@@ -163,6 +164,7 @@ docker compose down
 | [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | 燃料システム |
 | [VoiceRangeMarker](https://github.com/TomPecs/vrm) | $0 | \0 | | github | ボイスチャットの範囲を段階的に切り替える |
 | [Staxzs skateboard](https://forum.cfx.re/t/esx-qb-standalone-staxzs-skateboard/4863487/1) | €3 (EUR) | \485.58 | | cfx.re | スケートボード |
+| [pma-voice](https://github.com/AvarianKnight/pma-voice/releases/tag/v6.6.2) | $0 | \0 | | github | 声の範囲 |
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
 
