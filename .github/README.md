@@ -172,20 +172,20 @@ docker compose down
 
 ### Mods list
 
-| Name | Price(Orig) | Price(JPN) | Tag | Download Src | Description |
-| ---- | ----------- | ---------- | --- | ------------ | ----------- |
-| [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | Map | [cfx.re](https://www.dropbox.com/s/lb22r7rb4gwh44o/Postal%20Code%20Map.zip?dl=0) | postal map |
-| [ox_lib](https://github.com/overextended/ox_lib) | $0 | \0 | library | github | |
-| [bb-dices](https://github.com/BarBaroNN/bb-dices) | $0 | \0 | Mini-game | github | サイコロ振り |
-| [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | Disable-Util | github | ラジオ無効 |
-| [CL-ThermiteMission](https://github.com/NevoSwissa/CL-ThermiteMission) | $0 | \0 | Mission | github | テルミットミッション |
-| [TimeAndDateDisplay-FiveM](https://github.com/JokeDevil/TimeAndDateDisplay-FiveM) | $0 | \0 | | github | 画面右上に日時を表示 |
-| [cd_drawtextui](https://forum.cfx.re/t/free-release-draw-text-ui/1885313) | $0 | \0 | | github | 3DTextの最適化 |
-| [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | 燃料システム |
-| [VoiceRangeMarker](https://github.com/TomPecs/vrm) | $0 | \0 | | github | ボイスチャットの範囲を段階的に切り替える |
-| [Staxzs skateboard](https://forum.cfx.re/t/esx-qb-standalone-staxzs-skateboard/4863487/1) | €3 (EUR) | \485.58 | | cfx.re | スケートボード |
-| [pma-voice](https://github.com/AvarianKnight/pma-voice/releases/tag/v6.6.2) | $0 | \0 | | github | 声の範囲 |
-| [dpemotes](https://forum.cfx.re/t/dpemotes-1-7-390-emotes-walkingstyles-keybinding-dances-expressions-and-shared-emotes/843105) | $0 | \0 | | [github](https://github.com/andristum/dpemotes) | Emotes / Animations |
+| Name | Price(Orig) | Price(JPN) | Tag | Download Src | Require SQL | Description |
+| ---- | ----------- | ---------- | --- | ------------ | ----------- | ----------- |
+| [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458) | $0 | \0 | Map | [cfx.re](https://www.dropbox.com/s/lb22r7rb4gwh44o/Postal%20Code%20Map.zip?dl=0) | false | postal map |
+| [ox_lib](https://github.com/overextended/ox_lib) | $0 | \0 | library | github | false | |
+| [bb-dices](https://github.com/BarBaroNN/bb-dices) | $0 | \0 | Mini-game | github | false | サイコロ振り |
+| [QB-Disable-Radio](https://github.com/IanToujou/QB-Disable-Radio) | $0 | \0 | Disable-Util | github | false | ラジオ無効 |
+| [CL-ThermiteMission](https://github.com/NevoSwissa/CL-ThermiteMission) | $0 | \0 | Mission | github | false | テルミットミッション |
+| [TimeAndDateDisplay-FiveM](https://github.com/JokeDevil/TimeAndDateDisplay-FiveM) | $0 | \0 | | github | false | 画面右上に日時を表示 |
+| [cd_drawtextui](https://forum.cfx.re/t/free-release-draw-text-ui/1885313) | $0 | \0 | | github | false | 3DTextの最適化 |
+| [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | false | 燃料システム |
+| [VoiceRangeMarker](https://github.com/TomPecs/vrm) | $0 | \0 | | github | false | ボイスチャットの範囲を段階的に切り替える |
+| [Staxzs skateboard](https://forum.cfx.re/t/esx-qb-standalone-staxzs-skateboard/4863487/1) | €3 (EUR) | \485.58 | | cfx.re | false | スケートボード |
+| [pma-voice](https://github.com/AvarianKnight/pma-voice/releases/tag/v6.6.2) | $0 | \0 | | github | false | 声の範囲 |
+| [dpemotes](https://forum.cfx.re/t/dpemotes-1-7-390-emotes-walkingstyles-keybinding-dances-expressions-and-shared-emotes/843105) | $0 | \0 | | [github](https://github.com/andristum/dpemotes) | false | Emotes / Animations |
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
 
