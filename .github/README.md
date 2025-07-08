@@ -13,6 +13,7 @@
 	- [License Key](#license-key)
 	- [mods(cfx/fivem)](#modscfxfivem)
 		- [Mods list](#mods-list)
+		- [setup](#setup)
 		- [QBCoreの日本語翻訳](#qbcoreの日本語翻訳)
 		- [Postal Code Map \& Minimap](#postal-code-map--minimap)
 	- [参考](#参考)
