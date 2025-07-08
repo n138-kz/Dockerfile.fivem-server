@@ -189,6 +189,7 @@ docker compose down
 | [SuperMarket script - Hydrus - [FREE][ESX]](https://forum.cfx.re/t/supermarket-script-hydrus-free-esx/5076338) | 0 | 0 | | cfx.re then [googledrive](https://drive.google.com/file/d/1u-IEVWjz1ABTJMA5_HLLpWgx6-lsqMca/view?usp=sharing) | false | |
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
+- [fivem(QBcore)のおすすめのScript | Qiita](https://qiita.com/ae86jr225kei/items/d6d2f269c6e434668678)
 
 ### setup
 
