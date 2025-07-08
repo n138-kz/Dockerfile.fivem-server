@@ -97,4 +97,4 @@ var/
 venv.bak/
 venv/
 wheels/
-[mods]
+[mods]/*
