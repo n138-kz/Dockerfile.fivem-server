@@ -6,6 +6,7 @@ services:
       dockerfile: ./Dockerfile
       args:
         ROOT_PASSWORD: "${ROOT_PASSWORD:-password}"
+    pull: always
     environment:
       PUID: 1000
       PGID: 1000
@@ -45,6 +46,7 @@ services:
   fivem-database-admin:
     container_name: fivem-database-admin
     image: phpmyadmin/phpmyadmin
+    pull: always
     environment:
       PUID: 1000
       PGID: 1000
@@ -71,6 +73,7 @@ services:
   fivem-database:
     container_name: fivem-database
     image: mysql
+    pull: always
     environment:
       PUID: 1000
       PGID: 1000
@@ -97,6 +100,7 @@ services:
   fivem-core:
     container_name: fivem-core
     image: spritsail/fivem:${txadmin_version:-latest}
+    pull: always
     environment:
       PUID: 1000
       PGID: 1000
