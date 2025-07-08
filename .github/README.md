@@ -181,7 +181,7 @@ docker compose down
 | [CL-ThermiteMission](https://github.com/NevoSwissa/CL-ThermiteMission) | $0 | \0 | Mission | github | false | テルミットミッション |
 | [TimeAndDateDisplay-FiveM](https://github.com/JokeDevil/TimeAndDateDisplay-FiveM) | $0 | \0 | | github | false | 画面右上に日時を表示 |
 | [cd_drawtextui](https://forum.cfx.re/t/free-release-draw-text-ui/1885313) | $0 | \0 | | github | false | 3DTextの最適化 |
-| [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | false | 燃料システム |
+| [cdn-fuel](https://github.com/CodineDev/cdn-fuel) | $0 | \0 | | github | true | 燃料システム |
 | [VoiceRangeMarker](https://github.com/TomPecs/vrm) | $0 | \0 | | github | false | ボイスチャットの範囲を段階的に切り替える |
 | [Staxzs skateboard](https://forum.cfx.re/t/esx-qb-standalone-staxzs-skateboard/4863487/1) | €3 (EUR) | \485.58 | | cfx.re | false | スケートボード |
 | [pma-voice](https://github.com/AvarianKnight/pma-voice/releases/tag/v6.6.2) | $0 | \0 | | github | false | 声の範囲 |
