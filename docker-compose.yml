@@ -37,6 +37,10 @@ services:
         source: ./assets/
         target: /media/fivem-setup
         read_only: false
+      - type: bind
+        source: ./
+        target: /media/host
+        read_only: true
     logging: 
       driver: json-file
       options:
