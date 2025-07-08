@@ -186,6 +186,7 @@ docker compose down
 | [Staxzs skateboard](https://forum.cfx.re/t/esx-qb-standalone-staxzs-skateboard/4863487/1) | €3 (EUR) | \485.58 | | cfx.re | false | スケートボード |
 | [pma-voice](https://github.com/AvarianKnight/pma-voice/releases/tag/v6.6.2) | $0 | \0 | | github | false | 声の範囲 |
 | [dpemotes](https://forum.cfx.re/t/dpemotes-1-7-390-emotes-walkingstyles-keybinding-dances-expressions-and-shared-emotes/843105) | $0 | \0 | | [github](https://github.com/andristum/dpemotes) | false | Emotes / Animations |
+| [SuperMarket script - Hydrus - [FREE][ESX]](https://forum.cfx.re/t/supermarket-script-hydrus-free-esx/5076338) | 0 | 0 | | cfx.re then [googledrive](https://drive.google.com/file/d/1u-IEVWjz1ABTJMA5_HLLpWgx6-lsqMca/view?usp=sharing) | false | |
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
 
