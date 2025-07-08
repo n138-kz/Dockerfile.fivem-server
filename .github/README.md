@@ -187,6 +187,8 @@ docker compose down
 | [pma-voice](https://github.com/AvarianKnight/pma-voice/releases/tag/v6.6.2) | $0 | \0 | | github | false | 声の範囲 |
 | [dpemotes](https://forum.cfx.re/t/dpemotes-1-7-390-emotes-walkingstyles-keybinding-dances-expressions-and-shared-emotes/843105) | $0 | \0 | | [github](https://github.com/andristum/dpemotes) | false | Emotes / Animations |
 | [SuperMarket script - Hydrus - [FREE][ESX]](https://forum.cfx.re/t/supermarket-script-hydrus-free-esx/5076338) | 0 | 0 | | cfx.re then [googledrive](https://drive.google.com/file/d/1u-IEVWjz1ABTJMA5_HLLpWgx6-lsqMca/view?usp=sharing) | false | |
+| [ps-ui](https://github.com/Project-Sloth/ps-ui) | $0 | \0 | library | github | false | |
+| [AV Union Heist](https://forum.cfx.re/t/av-union-heist/5139656) | $0 | \0 | Mission | [github](https://github.com/avilchiis/av_union) | false | テルミットミッション |
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
 - [fivem(QBcore)のおすすめのScript | Qiita](https://qiita.com/ae86jr225kei/items/d6d2f269c6e434668678)
