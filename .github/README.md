@@ -188,6 +188,14 @@ docker compose down
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
 
+### setup
+
+```sh
+docker compose exec -it fivem-fileshell ls -l /media/host/assets/\[mods\] /txData/QBCore_6CAFFA.base/resources/\[mods\]
+docker compose exec -it fivem-fileshell cp -r /media/host/assets/\[mods\] /txData/QBCore_6CAFFA.base/resources/
+docker compose exec -it fivem-fileshell ls -l /media/host/assets/\[mods\] /txData/QBCore_6CAFFA.base/resources/\[mods\]
+```
+
 ### QBCoreの日本語翻訳
 - [QBCoreの日本語翻訳](https://gamesv.agepote.jp/download/fivemserver-jp-translation)
 
