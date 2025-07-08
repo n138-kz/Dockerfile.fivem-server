@@ -13,7 +13,7 @@ services:
       LANG: "C"
       LANGUAGE: "C"
       LC_ALL: "C"
-    restart: on-failure
+    restart: always
     tty: true
     tmpfs:
       - /tmp
@@ -55,7 +55,7 @@ services:
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-password}"
       PMA_HOST: "fivem-database"
       PMA_ARBITRARY: 1
-    restart: on-failure
+    restart: always
     tty: true
     tmpfs:
       - /run
