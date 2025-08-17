@@ -13,6 +13,9 @@ RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/
 RUN echo 'sshd: all' >> /etc/hosts.deny
 RUN curl https://ipv4.fetus.jp/jp.txt | sed -e 's/^#.*//g' | grep -v '^$' | sed -e 's/^/sshd: /g' >> /etc/hosts.allow
 
+# Install all resource dependencies
+RUN apt-get update && apt-get install -y npm
+
 #
 WORKDIR /
 
