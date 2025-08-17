@@ -12,11 +12,8 @@ jobs:
     # https://github.com/n138-kz/n138-kz/blob/main/.github/workflows/github-act_send_github_context.yml
     secrets: inherit # pass all secrets
 
-  build:
-
+  compose-build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker compose build
+    - run: docker compose build
