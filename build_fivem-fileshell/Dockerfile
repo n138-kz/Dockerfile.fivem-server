@@ -15,7 +15,6 @@ RUN curl https://ipv4.fetus.jp/jp.txt | sed -e 's/^#.*//g' | grep -v '^$' | sed 
 
 #
 WORKDIR /
-RUN echo 'cd /' >> /root/.bashrc
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
