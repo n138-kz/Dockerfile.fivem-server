@@ -13,9 +13,7 @@ jobs:
     secrets: inherit # pass all secrets
 
   compose-build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - run: docker compose build
