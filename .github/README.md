@@ -79,6 +79,9 @@ txadmin_version="latest"
 > - https://datatracker.ietf.org/doc/html/rfc5737
 
 4. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
+
+   ![](/docs/images/setup_ready_02.webp)
+
 5. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
 6. `Discord ID` と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
 
