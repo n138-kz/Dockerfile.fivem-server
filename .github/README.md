@@ -74,6 +74,7 @@ txadmin_version="latest"
 	- [http://203.0.113.100:40120/](http://203.0.113.100:40120 "203.0.113.100: ドキュメント用アドレス(RFC 5737)")
 
 > [!TIP]
+> 203.0.113.100: ドキュメント用アドレス(RFC 5737)
 > - https://tex2e.github.io/rfc-translater/html/rfc5737.html
 > - https://datatracker.ietf.org/doc/html/rfc5737
 
