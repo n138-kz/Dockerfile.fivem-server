@@ -78,6 +78,7 @@ docker compose up -d --build
 > │                                    │
 > └────────────────────────────────────┘
 > ```
+> ![](/docs/images/setup_ready_01.webp)
 
 3. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
 
