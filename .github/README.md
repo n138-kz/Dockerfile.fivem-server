@@ -18,22 +18,28 @@ FiveMサーバー(コンテナ型仮想環境)
 	- [fivem-database-admin](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
 	- [fivem-core](https://hub.docker.com/r/spritsail/fivem)
 
-## 環境変数ファイル（ファイル名： `.env` ）
+## 環境変数ファイル
+
+ファイル名： `.env`
 
 ```c:.env
 MYSQL_ROOT_PASSWORD="mysql-password"
 ROOT_PASSWORD="shroot-password"
-txadmin_version="13227"
+txadmin_version="25770"
 ```
 
 [Builds - fivem/build_proot_linux/master/](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
 [![version:fivem:13227](https://img.shields.io/badge/version-fivem:13227-brightgreen)](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)  
 [![version:fivem:25770:LATEST_RECOMMENDED](https://img.shields.io/badge/version-fivem:25770:LATEST_RECOMMENDED-brightgreen)](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
 
+1. 環境変数ファイル作成
+
+
+
 1. コンテナの生成と起動
 
 ```sh
-docker compose up -d --build 
+docker compose up -d --build
 ```
 
 > [!TIP]
