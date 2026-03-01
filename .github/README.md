@@ -80,15 +80,15 @@ txadmin_version="latest"
 
 4. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
 
-   ![](/docs/images/setup_ready_02.webp)
+   ![](/docs/images/setup_ready_02.webp)  
 
 5. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
 
-   ![](/docs/images/setup_ready_03.webp)
+   ![](/docs/images/setup_ready_03.webp)  
 
 6. `Discord ID`（任意） と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
 
-   ![](/docs/images/setup_ready_04.webp)
+   ![](/docs/images/setup_ready_04.webp)  
 
 7. サーバのセットアップを行う
 
