@@ -5,27 +5,7 @@
 [![version:fivem](https://img.shields.io/badge/version-fivem-brightgreen)](.)  
 [![framework:QBCore](https://img.shields.io/badge/framework-QBCore-brightgreen)](.)  
 
-- [README](#readme)
-	- [概要](#概要)
-	- [使用機材](#使用機材)
-	- [コンテナ停止](#コンテナ停止)
-	- [ポート用途](#ポート用途)
-	- [License Key](#license-key)
-	- [mods(cfx/fivem)](#modscfxfivem)
-		- [Mods list](#mods-list)
-		- [setup](#setup)
-		- [QBCoreの日本語翻訳](#qbcoreの日本語翻訳)
-		- [Postal Code Map \& Minimap](#postal-code-map--minimap)
-	- [参考](#参考)
-		- [docker-compose](#docker-compose)
-		- [Github/README](#githubreadme)
-		- [fivem-core](#fivem-core)
-			- [server.cfg](#servercfg)
-				- [日本語フォント可視化](#日本語フォント可視化)
-		- [fivem-database](#fivem-database)
-
-コンテナ型仮想環境で、FiveMサーバーを構築します。  
-使用するコンテナイメージは Docker 社が運営する公開レジストリの Docker Hub から取得します。  
+FiveMサーバー(コンテナ型仮想環境)
 
 ## 使用機材
 
@@ -45,7 +25,8 @@ txadmin_version="13227"
 
 [Builds - fivem/build_proot_linux/master/](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)
 [txadmin:build:13227](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)
-
+[txadmin:build:25770](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)
+[![version:fivem:25770](https://img.shields.io/badge/version-fivem:25770-brightgreen)](.)  
 
 1. コンテナの生成と起動
 
