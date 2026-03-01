@@ -9,6 +9,9 @@ FiveMサーバー(コンテナ型仮想環境)
 
 ## 使用機材
 
+- Image
+	- [spritsail/fivem](https://github.com/spritsail/fivem/)
+
 - Docker Hub
 	- [fivem-fileshell](https://hub.docker.com/_/ubuntu/tags#latest)
 	- [fivem-database](https://hub.docker.com/_/mysql#latest)
