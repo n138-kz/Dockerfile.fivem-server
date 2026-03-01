@@ -18,6 +18,16 @@ FiveMサーバー(コンテナ型仮想環境)
 	- [fivem-database-admin](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
 	- [fivem-core](https://hub.docker.com/r/spritsail/fivem)
 
+## ポート用途
+
+| Port Global   | Protocol | Port Local | Usage             | 外部接続 | カスタマイズ用変数 |
+| ------------: | :------: | ---------: | :---------------- | :------: | :----------------- |
+| Not Connected |   TCP    |       3306 | MySQL Database    | No       |                    |
+|         30120 |   TCP    |      30120 | FiveM             | Yes      |                    |
+|         40120 |   TCP    |      40120 | TxAdmin           | Yes      |                    |
+|   30000-65535 |   TCP    |         22 | SSH(Secure SHell) | Yes      | `PORT_SSH`         |
+|   30000-65535 |   TCP    |         80 | MySQL Admin       | Yes      | `PORT_DBMYADMIN`   |
+
 ## 環境変数ファイル
 
 ファイル名： `.env`
@@ -112,16 +122,6 @@ docker compose down
 
 > [!CAUTION]
 > 上記コマンドはワールドデータも削除するため、取り扱いには十分注意すること。
-
-## ポート用途
-
-| Port Global   | Protocol | Port Local | Usage             | 外部接続 | カスタマイズ用変数 |
-| ------------: | :------: | ---------: | :---------------- | :------: | :----------------- |
-| Not Connected |   TCP    |       3306 | MySQL Database    | No       |                    |
-|         30120 |   TCP    |      30120 | FiveM             | Yes      |                    |
-|         40120 |   TCP    |      40120 | TxAdmin           | Yes      |                    |
-|   30000-65535 |   TCP    |         22 | SSH(Secure SHell) | Yes      | `PORT_SSH`         |
-|   30000-65535 |   TCP    |         80 | MySQL Admin       | Yes      | `PORT_DBMYADMIN`   |
 
 ## mods(cfx/fivem)
 
