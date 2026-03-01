@@ -25,7 +25,7 @@ txadmin_version="13227"
 
 [Builds - fivem/build_proot_linux/master/](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
 [![version:fivem:13227](https://img.shields.io/badge/version-fivem:13227-brightgreen)](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)  
-[![version:fivem:25770:RECOMMENDED](https://img.shields.io/badge/version-fivem:25770:RECOMMENDED-brightgreen)](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
+[![version:fivem:25770:LATEST_RECOMMENDED](https://img.shields.io/badge/version-fivem:25770:LATEST_RECOMMENDED-brightgreen)](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
 
 1. コンテナの生成と起動
 
