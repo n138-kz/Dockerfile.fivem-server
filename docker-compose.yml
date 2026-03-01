@@ -19,7 +19,7 @@ services:
     tmpfs:
       - /tmp
     ports:
-      - "30000-65530:22"
+      - "${PORT_SSH:-30000-65530}:22"
     volumes:
       - type: volume
         source: fivem-database
