@@ -40,6 +40,8 @@ txadmin_version="25770"
 4. Input the server display name & passing the Captcha then click `Generate`.
 5. Copy Key to clipboard on the local pc.
 
+## 起動
+
 1. 環境変数ファイル作成
 
 [#環境変数ファイル](#環境変数ファイル) を参考に
