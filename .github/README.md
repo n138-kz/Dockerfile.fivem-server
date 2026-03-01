@@ -94,7 +94,7 @@ txadmin_version="latest"
 > - [Where can I find my User/Server/Message ID? | Discord](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
 > - [ユーザー/サーバー/メッセージIDはどこで見つけられる？ | Discord](https://support.discord.com/hc/ja/articles/206346498-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8ID%E3%81%AF%E3%81%A9%E3%81%93%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%89%E3%82%8C%E3%82%8B)
 
-5. `Review Recipe` で追加するmodを記載する
+1. `Review Recipe` で追加するmodを記載する
 
 	- [あとからmod導入](#modscfxfivem)する場合は `/txData/QBCoreFramework_*.base/resources/` 配下に置く
 	- セットアップ時にmod追加する場合は以下（メジャーmodのみ記載）
