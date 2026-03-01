@@ -2,32 +2,15 @@
 
 ## 概要
 
-![version:fivem](https://img.shields.io/badge/version-fivem-brightgreen)  
-![framework:QBCore](https://img.shields.io/badge/framework-QBCore-brightgreen)  
+[![version:fivem](https://img.shields.io/badge/version-fivem-brightgreen)](.)  
+[![framework:QBCore](https://img.shields.io/badge/framework-QBCore-brightgreen)](.)  
 
-- [README](#readme)
-	- [概要](#概要)
-	- [使用機材](#使用機材)
-	- [コンテナ停止](#コンテナ停止)
-	- [ポート用途](#ポート用途)
-	- [License Key](#license-key)
-	- [mods(cfx/fivem)](#modscfxfivem)
-		- [Mods list](#mods-list)
-		- [setup](#setup)
-		- [QBCoreの日本語翻訳](#qbcoreの日本語翻訳)
-		- [Postal Code Map \& Minimap](#postal-code-map--minimap)
-	- [参考](#参考)
-		- [docker-compose](#docker-compose)
-		- [Github/README](#githubreadme)
-		- [fivem-core](#fivem-core)
-			- [server.cfg](#servercfg)
-				- [日本語フォント可視化](#日本語フォント可視化)
-		- [fivem-database](#fivem-database)
-
-コンテナ型仮想環境で、FiveMサーバーを構築します。  
-使用するコンテナイメージは Docker 社が運営する公開レジストリの Docker Hub から取得します。  
+FiveMサーバー(コンテナ型仮想環境)
 
 ## 使用機材
+
+- Image
+	- [spritsail/fivem](https://github.com/spritsail/fivem/)
 
 - Docker Hub
 	- [fivem-fileshell](https://hub.docker.com/_/ubuntu/tags#latest)
@@ -35,106 +18,97 @@
 	- [fivem-database-admin](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
 	- [fivem-core](https://hub.docker.com/r/spritsail/fivem)
 
+## ポート用途
 
-1. Docker のインストール
+| Port Global   | Protocol | Port Local | Usage             | 外部接続 | カスタマイズ用変数 |
+| ------------: | :------: | ---------: | :---------------- | :------: | :----------------- |
+| Not Connected |   TCP    |       3306 | MySQL Database    | No       |                    |
+|         30120 |   TCP    |      30120 | FiveM             | Yes      |                    |
+|         30120 |   UDP    |      30120 | FiveM             | Yes      |                    |
+|         40120 |   TCP    |      40120 | TxAdmin           | Yes      |                    |
+|   30000-65535 |   TCP    |         22 | SSH(Secure SHell) | Yes      | `PORT_SSH`         |
+|   30000-65535 |   TCP    |         80 | MySQL Admin       | Yes      | `PORT_DBMYADMIN`   |
 
-[インストール方法](https://docs.docker.jp/engine/installation/linux/index.html)  
+## 環境変数ファイル
 
-
-1. Compose ファイル を編集する。
-
-```sh
-git clone https://github.com/n138-kz/fivem-server
-cd fivem-server/
-```
-```sh
-docker pull ubuntu
-docker pull mysql
-docker pull phpmyadmin/phpmyadmin
-docker pull spritsail/fivem
-docker pull spritsail/fivem:13227
-```
-
-
-1. 環境変数ファイル（ファイル名： `.env` ） を作成・編集する。（詳細は公式ドキュメントを参照）
+ファイル名： `.env`
 
 ```c:.env
 MYSQL_ROOT_PASSWORD="mysql-password"
 ROOT_PASSWORD="shroot-password"
-txadmin_version="13227"
-```
-[txadmin:build:13227](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)
-
-
-1. コンテナの生成と起動
-
-```sh
-docker compose up -d --build 
+txadmin_version="latest"
 ```
 
+[Builds - fivem/build_proot_linux/master/](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
+[![version:fivem:13227](https://img.shields.io/badge/version-fivem:13227-brightgreen)](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)  
+[![version:fivem:25770:LATEST_RECOMMENDED](https://img.shields.io/badge/version-fivem:25770:LATEST_RECOMMENDED-brightgreen)](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
+
+## License Key
+
+1. Jump to [Cfx.re Keymaster](https://keymaster.fivem.net/login)
+2. Signin your account.
+3. `Server Owners` > `New server`
+4. Input the server display name & passing the Captcha then click `Generate`.
+5. Copy Key to clipboard on the local pc.
+
+## 起動
+
+1. 環境変数ファイル作成
+
+	[#環境変数ファイル](#環境変数ファイル) を参考に作成
+
+2. コンテナの生成と起動
+
+	```sh
+	docker pull ubuntu
+	docker pull mysql
+	docker pull phpmyadmin/phpmyadmin
+	docker pull spritsail/fivem
+	docker pull spritsail/fivem:13227
+	```
+	
+	```sh
+	docker compose up -d --build
+	```
+	
+	> 初回起動時のみ `docker compose logs -f` を実行して、下記 が表示されれば起動完了
+	>
+	> ```sh
+	> docker compose logs -f
+	> ```
+	>
+	> ![](/docs/images/setup_ready_01.webp)
+
+3. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
+
+	- [http://your-public-ip:40120/](http://your-public-ip:40120)
+	- [http://203.0.113.100:40120/](http://203.0.113.100:40120 "203.0.113.100: ドキュメント用アドレス(RFC 5737)")
 
 > [!TIP]
-> `docker compose logs -f` を実行して、下記 が表示されれば起動完了。（初回起動時のみ）
->
-> ```sh
-> docker compose logs -f
-> ```
-> ```
-> ┌────────────────────────────────────┐
-> │                                    │
-> │     All ready! Please access:      │
-> │    http://your-public-ip:40120/    │
-> │    http://203.0.113.100:40120/     │
-> │                                    │
-> │   Use the PIN below to register:   │
-> │                0000                │
-> │                                    │
-> └────────────────────────────────────┘
-> ```
+> 203.0.113.100: ドキュメント用アドレス(RFC 5737)
+> - https://tex2e.github.io/rfc-translater/html/rfc5737.html
+> - https://datatracker.ietf.org/doc/html/rfc5737
 
+4. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
 
-1. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
+   ![](/docs/images/setup_ready_02.webp)
 
-1. txadminにアクセス
-- [http://your-public-ip:40120/](http://your-public-ip:40120)
-- [http://203.0.113.100:40120/](http://203.0.113.100:40120)
+5. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
 
-1. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
-1. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
-1. `Discord ID` と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
+   ![](/docs/images/setup_ready_03.webp)
+
+6. `Discord ID`（任意） と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
+
+   ![](/docs/images/setup_ready_04.webp)
 
 > [!TIP]
-> - [Where can I find my User/Server/Message ID?](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
-> - [ユーザー/サーバー/メッセージIDはどこで見つけられる？](https://support.discord.com/hc/ja/articles/206346498-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8ID%E3%81%AF%E3%81%A9%E3%81%93%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%89%E3%82%8C%E3%82%8B)
+> - [Where can I find my User/Server/Message ID? | Discord](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
+> - [ユーザー/サーバー/メッセージIDはどこで見つけられる？ | Discord](https://support.discord.com/hc/ja/articles/206346498-%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC-%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC-%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8ID%E3%81%AF%E3%81%A9%E3%81%93%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%89%E3%82%8C%E3%82%8B)
 
-5. `Review Recipe` で追加するmodを記載する
+7. サーバのセットアップを行う
 
-	- [あとからmod導入](#modscfxfivem)する場合は `/txData/QBCoreFramework_*.base/resources/` 配下に置く
-	- セットアップ時にmod追加する場合は以下（メジャーmodのみ記載）
-	
-	<details>
-		<summary>動作しないけどこの書式のはず（Bad Archive）</summary>
-		
-		- [Postal Code Map & Minimap](https://forum.cfx.re/t/release-postal-code-map-minimap-new-improved-v1-3/147458)
-	
-		1. Review Recipe に下記追記
-		- `# Clean up`(だいたい422行目付近) より前に記載する
-		- yamlの書式に合わせ記載する（インデントなど）
-
-		```text
-		- action: download_file
-		  path: ./tmp/Postal_Code_Map.zip
-		  url: https://www.dropbox.com/s/lb22r7rb4gwh44o/Postal%20Code%20Map.zip
-		- action: unzip
-		  dest: ./resources/[mods]
-		  src: ./tmp/Postal_Code_Map.zip
-		```
-
-		2. server.cfg に下記追加
-		```
-		ensure [mods]
-		```
-	</details>
+	![](/docs/images/setup_ready_05.webp)
+	ライセンスキー(Server Registration Key)は [#license-key](#license-key) を参考に作成
 
 ## コンテナ停止
 
@@ -149,24 +123,7 @@ docker compose down
 > ```
 
 > [!CAUTION]
-> `docker compose down --rmi all --volumes --remove-orphans` はワールドデータも削除するため、取り扱いには十分注意すること。
-
-## ポート用途
-
-| Port Global | Port Local | Usage          | External | 
-| ----------- | ---------- | -------------- | -------- | 
-|             | 3306       | MySQL Database | false    | 
-| 30120       | 30120      | FiveM          | true     | 
-| 40120       | 40120      | TxAdmin        | true     | 
-| 30000-65535 | 80         | MySQL Admin    | true     | 
-
-## License Key
-
-1. Jump to [Cfx.re Keymaster](https://keymaster.fivem.net/login)
-2. Signin your account.
-3. `Server Owners` > `New server`
-4. Input the server display name & passing the Captcha then click `Generate`.
-5. Copy Key to clipboard on the local pc.
+> 上記コマンドはワールドデータも削除するため、取り扱いには十分注意すること。
 
 ## mods(cfx/fivem)
 
@@ -191,6 +148,7 @@ docker compose down
 | [AV Union Heist](https://forum.cfx.re/t/av-union-heist/5139656) | $0 | \0 | Mission | [github](https://github.com/avilchiis/av_union) | false | ユニオンミッション |
 | [FiveM-Clothes](https://github.com/xchopin/FiveM-Clothes/) | $0 | \0 | 服屋 | github | FiveM: Clothing Shops addon |
 | [Group Jobs Tablet.](https://forum.cfx.re/t/free-esx-qb-group-jobs-tablet-rep-scripts/5041937) | $0 | \0 | Job | [github](https://github.com/Rep-Scripts/rep-tablet) | Job |
+| [ESX_GiveCarKeys](https://forum.cfx.re/t/esx-givecarkeys/196133) | $0 | \0 | Command | [github](https://github.com/D3uxx/ESX_GiveCarKeys/archive/1.1.zip) | false | `/givekey` |
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
 - [fivem(QBcore)のおすすめのScript | Qiita](https://qiita.com/ae86jr225kei/items/d6d2f269c6e434668678)

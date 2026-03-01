@@ -1,6 +1,7 @@
 *.b0*
 *.b1*
 *.bak*
+_trash/
 *.class
 *.cover
 *.ctxt
