@@ -46,7 +46,7 @@ txadmin_version="25770"
 
 [#環境変数ファイル](#環境変数ファイル) を参考に
 
-1. コンテナの生成と起動
+2. コンテナの生成と起動
 
 ```sh
 docker compose up -d --build
@@ -71,10 +71,9 @@ docker compose up -d --build
 > └────────────────────────────────────┘
 > ```
 
+3. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
 
-1. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
-
-1. txadminにアクセス
+4. txadminにアクセス
 - [http://your-public-ip:40120/](http://your-public-ip:40120)
 - [http://203.0.113.100:40120/](http://203.0.113.100:40120)
 
