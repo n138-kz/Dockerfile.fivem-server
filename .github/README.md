@@ -66,18 +66,6 @@ docker compose up -d --build
 > ```sh
 > docker compose logs -f
 > ```
-> ```
-> ┌────────────────────────────────────┐
-> │                                    │
-> │     All ready! Please access:      │
-> │    http://your-public-ip:40120/    │
-> │    http://203.0.113.100:40120/     │
-> │                                    │
-> │   Use the PIN below to register:   │
-> │                0000                │
-> │                                    │
-> └────────────────────────────────────┘
-> ```
 > ![](/docs/images/setup_ready_01.webp)
 
 3. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
