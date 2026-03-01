@@ -44,35 +44,34 @@ txadmin_version="latest"
 
 1. 環境変数ファイル作成
 
-[#環境変数ファイル](#環境変数ファイル) を参考に作成
+	[#環境変数ファイル](#環境変数ファイル) を参考に作成
 
 2. コンテナの生成と起動
 
-```sh
-docker pull ubuntu
-docker pull mysql
-docker pull phpmyadmin/phpmyadmin
-docker pull spritsail/fivem
-docker pull spritsail/fivem:13227
-```
-
-```sh
-docker compose up -d --build
-```
-
-> [!TIP]
-> `docker compose logs -f` を実行して、下記 が表示されれば起動完了。（初回起動時のみ）
->
-> ```sh
-> docker compose logs -f
-> ```
-> ![](/docs/images/setup_ready_01.webp)
+	```sh
+	docker pull ubuntu
+	docker pull mysql
+	docker pull phpmyadmin/phpmyadmin
+	docker pull spritsail/fivem
+	docker pull spritsail/fivem:13227
+	```
+	
+	```sh
+	docker compose up -d --build
+	```
+	
+	> [!TIP]
+	> `docker compose logs -f` を実行して、下記 が表示されれば起動完了。（初回起動時のみ）
+	>
+	> ```sh
+	> docker compose logs -f
+	> ```
+	> ![](/docs/images/setup_ready_01.webp)
 
 3. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
 
-4. txadminにアクセス
-- [http://your-public-ip:40120/](http://your-public-ip:40120)
-- [http://203.0.113.100:40120/](http://203.0.113.100:40120)
+	- [http://your-public-ip:40120/](http://your-public-ip:40120)
+	- [http://203.0.113.100:40120/](http://203.0.113.100:40120)
 
 1. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
 1. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
