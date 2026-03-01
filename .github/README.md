@@ -73,9 +73,13 @@ txadmin_version="latest"
 	- [http://your-public-ip:40120/](http://your-public-ip:40120)
 	- [http://203.0.113.100:40120/](http://203.0.113.100:40120 "203.0.113.100: ドキュメント用アドレス(RFC 5737)")
 
-1. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
-1. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
-1. `Discord ID` と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
+> [!TIP]
+> - https://tex2e.github.io/rfc-translater/html/rfc5737.html
+> - https://datatracker.ietf.org/doc/html/rfc5737
+
+4. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
+5. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
+6. `Discord ID` と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
 
 > [!TIP]
 > - [Where can I find my User/Server/Message ID?](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
