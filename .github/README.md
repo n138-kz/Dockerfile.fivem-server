@@ -108,7 +108,7 @@ txadmin_version="latest"
 7. サーバのセットアップを行う
 
 	![](/docs/images/setup_ready_05.webp)
-	[#license-key](#license-key) を参考に作成
+	ライセンスキー(Server Registration Key)は [#license-key](#license-key) を参考に作成
 
 ## コンテナ停止
 
