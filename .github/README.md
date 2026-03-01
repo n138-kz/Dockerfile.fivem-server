@@ -49,6 +49,14 @@ txadmin_version="25770"
 2. コンテナの生成と起動
 
 ```sh
+docker pull ubuntu
+docker pull mysql
+docker pull phpmyadmin/phpmyadmin
+docker pull spritsail/fivem
+docker pull spritsail/fivem:13227
+```
+
+```sh
 docker compose up -d --build
 ```
 
