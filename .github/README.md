@@ -86,7 +86,7 @@ txadmin_version="latest"
 
    ![](/docs/images/setup_ready_03.webp)
 
-6. `Discord ID` と `Backup Password` を入力し（任意）、利用規約同意にチェックし、 `Register` 押下
+6. `Discord ID`（任意） と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
 
    ![](/docs/images/setup_ready_04.webp)
 
