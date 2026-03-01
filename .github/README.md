@@ -107,7 +107,7 @@ txadmin_version="latest"
 
 7. サーバのセットアップを行う
 
-   ![](/docs/images/setup_ready_05.webp)
+	![](/docs/images/setup_ready_05.webp)
 
 ## コンテナ停止
 
