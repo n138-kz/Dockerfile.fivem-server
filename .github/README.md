@@ -117,11 +117,11 @@ docker compose down
 
 | Port Global   | Protocol | Port Local | Usage             | 外部接続 | カスタマイズ用変数 |
 | ------------- | -------- | ---------- | ----------------- | -------- | ------------------ |
-| Not connected |   TCP    |       3306 | MySQL Database    | false    | |
-|         30120 |   TCP    |      30120 | FiveM             | true     | |
-|         40120 |   TCP    |      40120 | TxAdmin           | true     | |
-|   30000-65535 |   TCP    |         22 | SSH(Secure SHell) | true     | |
-|   30000-65535 |   TCP    |         80 | MySQL Admin       | true     | |
+| Not connected |   TCP    |       3306 | MySQL Database    | No       | |
+|         30120 |   TCP    |      30120 | FiveM             | Yes      | |
+|         40120 |   TCP    |      40120 | TxAdmin           | Yes      | |
+|   30000-65535 |   TCP    |         22 | SSH(Secure SHell) | Yes      | |
+|   30000-65535 |   TCP    |         80 | MySQL Admin       | Yes      | |
 
 ## mods(cfx/fivem)
 
