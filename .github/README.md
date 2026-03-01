@@ -147,6 +147,7 @@ docker compose down
 | [AV Union Heist](https://forum.cfx.re/t/av-union-heist/5139656) | $0 | \0 | Mission | [github](https://github.com/avilchiis/av_union) | false | ユニオンミッション |
 | [FiveM-Clothes](https://github.com/xchopin/FiveM-Clothes/) | $0 | \0 | 服屋 | github | FiveM: Clothing Shops addon |
 | [Group Jobs Tablet.](https://forum.cfx.re/t/free-esx-qb-group-jobs-tablet-rep-scripts/5041937) | $0 | \0 | Job | [github](https://github.com/Rep-Scripts/rep-tablet) | Job |
+| [ESX_GiveCarKeys](https://forum.cfx.re/t/esx-givecarkeys/196133) | $0 | \0 | Command | [](https://github.com/D3uxx/ESX_GiveCarKeys/archive/1.1.zip) | false | `/givekey` |
 
 - [某有名鯖のスクリプト一覧 | ポテト](https://docs.google.com/spreadsheets/d/1Mr2r4rjVWrBoeGrOhW8OJJkt7JY_BoAO3AS8lbD-OUs/edit?usp=sharing)
 - [fivem(QBcore)のおすすめのScript | Qiita](https://qiita.com/ae86jr225kei/items/d6d2f269c6e434668678)
