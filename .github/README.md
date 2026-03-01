@@ -115,13 +115,13 @@ docker compose down
 
 ## ポート用途
 
-| Port Global   | Port Local | Usage             | External | カスタマイズ用変数 |
-| ------------- | ---------- | ----------------- | -------- | ---------------- |
-| Not connected | 3306       | MySQL Database    | false    | |
-|         30120 | 30120      | FiveM             | true     | |
-|         40120 | 40120      | TxAdmin           | true     | |
-|   30000-65535 | 22         | SSH(Secure SHell) | true     | |
-|   30000-65535 | 80         | MySQL Admin       | true     | |
+| Port Global   | Port Local | Usage             | 外部接続 | カスタマイズ用変数 |
+| ------------- | ---------- | ----------------- | ------- | ---------------- |
+| Not connected | 3306       | MySQL Database    | false   | |
+|         30120 | 30120      | FiveM             | true    | |
+|         40120 | 40120      | TxAdmin           | true    | |
+|   30000-65535 | 22         | SSH(Secure SHell) | true    | |
+|   30000-65535 | 80         | MySQL Admin       | true    | |
 
 ## mods(cfx/fivem)
 
