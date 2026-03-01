@@ -67,7 +67,7 @@ services:
       - /run
       - /tmp
     ports:
-      - "30000-65530:80"
+      - "${PORT_DBMYADMIN:-30000-65530}:80"
     logging: 
       driver: json-file
       options:
