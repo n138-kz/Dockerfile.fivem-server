@@ -2,8 +2,8 @@
 
 ## 概要
 
-![version:fivem](https://img.shields.io/badge/version-fivem-brightgreen)  
-![framework:QBCore](https://img.shields.io/badge/framework-QBCore-brightgreen)  
+[![version:fivem](https://img.shields.io/badge/version-fivem-brightgreen)](.)  
+[![framework:QBCore](https://img.shields.io/badge/framework-QBCore-brightgreen)](.)  
 
 - [README](#readme)
 	- [概要](#概要)
@@ -35,34 +35,15 @@
 	- [fivem-database-admin](https://hub.docker.com/r/phpmyadmin/phpmyadmin)
 	- [fivem-core](https://hub.docker.com/r/spritsail/fivem)
 
-
-1. Docker のインストール
-
-[インストール方法](https://docs.docker.jp/engine/installation/linux/index.html)  
-
-
-1. Compose ファイル を編集する。
-
-```sh
-git clone https://github.com/n138-kz/fivem-server
-cd fivem-server/
-```
-```sh
-docker pull ubuntu
-docker pull mysql
-docker pull phpmyadmin/phpmyadmin
-docker pull spritsail/fivem
-docker pull spritsail/fivem:13227
-```
-
-
-1. 環境変数ファイル（ファイル名： `.env` ） を作成・編集する。（詳細は公式ドキュメントを参照）
+## 環境変数ファイル（ファイル名： `.env` ）
 
 ```c:.env
 MYSQL_ROOT_PASSWORD="mysql-password"
 ROOT_PASSWORD="shroot-password"
 txadmin_version="13227"
 ```
+
+[Builds - fivem/build_proot_linux/master/](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)
 [txadmin:build:13227](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)
 
 
