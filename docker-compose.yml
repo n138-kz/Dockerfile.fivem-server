@@ -60,7 +60,7 @@ services:
       LC_ALL: "C"
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-password}"
       PMA_HOST: "fivem-database"
-      PMA_ARBITRARY: 1
+      PMA_ARBITRARY: 0
     restart: always
     tty: true
     tmpfs:
