@@ -25,7 +25,7 @@ FiveMサーバー(コンテナ型仮想環境)
 ```c:.env
 MYSQL_ROOT_PASSWORD="mysql-password"
 ROOT_PASSWORD="shroot-password"
-txadmin_version="25770"
+txadmin_version="latest"
 ```
 
 [Builds - fivem/build_proot_linux/master/](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
