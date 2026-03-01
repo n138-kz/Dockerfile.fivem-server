@@ -83,7 +83,12 @@ txadmin_version="latest"
    ![](/docs/images/setup_ready_02.webp)
 
 5. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
+
+   ![](/docs/images/setup_ready_03.webp)
+
 6. `Discord ID` と `Backup Password` を入力し、利用規約同意にチェックし、 `Register` 押下
+
+   ![](/docs/images/setup_ready_04.webp)
 
 > [!TIP]
 > - [Where can I find my User/Server/Message ID?](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
