@@ -32,9 +32,17 @@ txadmin_version="25770"
 [![version:fivem:13227](https://img.shields.io/badge/version-fivem:13227-brightgreen)](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)  
 [![version:fivem:25770:LATEST_RECOMMENDED](https://img.shields.io/badge/version-fivem:25770:LATEST_RECOMMENDED-brightgreen)](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
 
+## License Key
+
+1. Jump to [Cfx.re Keymaster](https://keymaster.fivem.net/login)
+2. Signin your account.
+3. `Server Owners` > `New server`
+4. Input the server display name & passing the Captcha then click `Generate`.
+5. Copy Key to clipboard on the local pc.
+
 1. 環境変数ファイル作成
 
-
+[#環境変数ファイル](#環境変数ファイル) を参考に
 
 1. コンテナの生成と起動
 
@@ -128,14 +136,6 @@ docker compose down
 | 30120       | 30120      | FiveM          | true     | 
 | 40120       | 40120      | TxAdmin        | true     | 
 | 30000-65535 | 80         | MySQL Admin    | true     | 
-
-## License Key
-
-1. Jump to [Cfx.re Keymaster](https://keymaster.fivem.net/login)
-2. Signin your account.
-3. `Server Owners` > `New server`
-4. Input the server display name & passing the Captcha then click `Generate`.
-5. Copy Key to clipboard on the local pc.
 
 ## mods(cfx/fivem)
 
