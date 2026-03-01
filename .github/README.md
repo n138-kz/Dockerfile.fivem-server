@@ -117,7 +117,7 @@ txadmin_version="latest"
 		  src: ./tmp/Postal_Code_Map.zip
 		```
 
-		2. server.cfg に下記追加
+		1. server.cfg に下記追加
 		```
 		ensure [mods]
 		```
