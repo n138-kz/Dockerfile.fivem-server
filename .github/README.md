@@ -60,18 +60,18 @@ txadmin_version="latest"
 	docker compose up -d --build
 	```
 	
-	> [!TIP]
-	> `docker compose logs -f` を実行して、下記 が表示されれば起動完了。（初回起動時のみ）
+	> 初回起動時のみ `docker compose logs -f` を実行して、下記 が表示されれば起動完了
 	>
 	> ```sh
 	> docker compose logs -f
 	> ```
+	>
 	> ![](/docs/images/setup_ready_01.webp)
 
 3. Webブラウザで txadmin にアクセスし、セットアップ行う（初回起動時のみ）
 
 	- [http://your-public-ip:40120/](http://your-public-ip:40120)
-	- [http://203.0.113.100:40120/](http://203.0.113.100:40120)
+	- [http://203.0.113.100:40120/, 203.0.113.100:ドキュメント用アドレス](http://203.0.113.100:40120)
 
 1. コンソールに表示されているPINコードを入力して、 `Link Account` を押下する
 1. Cfx.reにログインする。（すでにログインしている場合は `CONTINUE` を押下）
