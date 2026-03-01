@@ -118,9 +118,9 @@ docker compose down
 | Port Global   | Port Local | Usage          | External | 
 | ------------- | ---------- | -------------- | -------- | 
 | Not connected | 3306       | MySQL Database | false    | 
-| 30120         | 30120      | FiveM          | true     | 
-| 40120         | 40120      | TxAdmin        | true     | 
-| 30000-65535   | 80         | MySQL Admin    | true     | 
+|         30120 | 30120      | FiveM          | true     | 
+|         40120 | 40120      | TxAdmin        | true     | 
+|   30000-65535 | 80         | MySQL Admin    | true     | 
 
 ## mods(cfx/fivem)
 
