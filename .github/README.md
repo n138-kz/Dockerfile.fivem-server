@@ -23,9 +23,9 @@ ROOT_PASSWORD="shroot-password"
 txadmin_version="13227"
 ```
 
-[Builds - fivem/build_proot_linux/master/](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)
-[txadmin:build:13227](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)
-[txadmin:build:25770](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)
+[Builds - fivem/build_proot_linux/master/](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/)  
+[txadmin:build:13227](https://forum.cfx.re/t/txadmin-v8-0-update-changelog/5312071)  
+[![version:fivem:13227](https://img.shields.io/badge/version-fivem:13227-brightgreen)](.)  
 [![version:fivem:25770](https://img.shields.io/badge/version-fivem:25770-brightgreen)](.)  
 
 1. コンテナの生成と起動
