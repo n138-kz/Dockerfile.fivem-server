@@ -33,7 +33,6 @@ txadmin_version="13227"
 docker compose up -d --build 
 ```
 
-
 > [!TIP]
 > `docker compose logs -f` を実行して、下記 が表示されれば起動完了。（初回起動時のみ）
 >
