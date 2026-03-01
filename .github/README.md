@@ -93,8 +93,6 @@ txadmin_version="latest"
 7. サーバのセットアップを行う
 
    ![](/docs/images/setup_ready_05.webp)  
-   ![](/docs/images/setup_ready_06.webp)  
-   ![](/docs/images/setup_ready_07.webp)  
 
 > [!TIP]
 > - [Where can I find my User/Server/Message ID? | Discord](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID)
