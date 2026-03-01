@@ -111,7 +111,7 @@ docker compose down
 > ```
 
 > [!CAUTION]
-> `docker compose down --rmi all --volumes --remove-orphans` はワールドデータも削除するため、取り扱いには十分注意すること。
+> 上記コマンドはワールドデータも削除するため、取り扱いには十分注意すること。
 
 ## ポート用途
 
