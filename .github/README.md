@@ -120,8 +120,8 @@ docker compose down
 | Not Connected |   TCP    |       3306 | MySQL Database    | No       |                    |
 |         30120 |   TCP    |      30120 | FiveM             | Yes      | |
 |         40120 |   TCP    |      40120 | TxAdmin           | Yes      | |
-|   30000-65535 |   TCP    |         22 | SSH(Secure SHell) | Yes      | `PORT_SSH`       |
-|   30000-65535 |   TCP    |         80 | MySQL Admin       | Yes      | `PORT_DBMYADMIN` |
+|   30000-65535 |   TCP    |         22 | SSH(Secure SHell) | Yes      | `PORT_SSH`         |
+|   30000-65535 |   TCP    |         80 | MySQL Admin       | Yes      | `PORT_DBMYADMIN`   |
 
 ## mods(cfx/fivem)
 
