@@ -13,7 +13,7 @@ services:
       LANG: "C"
       LANGUAGE: "C"
       LC_ALL: "C"
-    restart: always
+    restart: unless-stopped
     tty: true
     tmpfs:
       - /tmp
@@ -59,8 +59,8 @@ services:
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-password}"
       PMA_HOST: "fivem-database"
       PMA_ARBITRARY: 0
-    restart: always
     tty: true
+    restart: unless-stopped
     tmpfs:
       - /run
       - /tmp
@@ -83,8 +83,8 @@ services:
       LANGUAGE: "C"
       LC_ALL: "C"
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-password}"
-    restart: always
     tty: true
+    restart: unless-stopped
     tmpfs:
       - /run
       - /tmp
@@ -109,7 +109,7 @@ services:
       LANGUAGE: "C"
       LC_ALL: "C"
       NO_DEFAULT_CONFIG: "1"
-    restart: always
+    restart: unless-stopped
     ports:
       - 30120:30120
       - 30120:30120/udp
