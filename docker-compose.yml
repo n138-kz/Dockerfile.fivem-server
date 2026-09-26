@@ -53,13 +53,14 @@ services:
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-password}"
       PMA_HOST: "fivem-database"
       PMA_ARBITRARY: 0
-    tty: true
     restart: unless-stopped
     tmpfs:
       - /run
       - /tmp
     ports:
       - "${PORT_DBMYADMIN:-30000-65530}:80"
+    depends_on:
+      - fivem-database
     logging: 
       driver: json-file
       options:
@@ -99,6 +100,8 @@ services:
     tmpfs:
       - /run
       - /tmp
+    depends_on:
+      - fivem-database
     volumes:
       - type: volume
         source: fivem-core-config
