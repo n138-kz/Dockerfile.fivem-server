@@ -44,7 +44,7 @@ services:
       driver: json-file
       options:
         max-size: "1024k"
-        max-file: "10"
+        max-file: "3"
 
   fivem-database-admin:
     container_name: fivem-database-admin
@@ -70,7 +70,7 @@ services:
       driver: json-file
       options:
         max-size: "1024k"
-        max-file: "10"
+        max-file: "3"
 
   fivem-database:
     container_name: fivem-database
