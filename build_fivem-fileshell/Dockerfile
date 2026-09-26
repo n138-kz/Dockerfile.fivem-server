@@ -1,8 +1,9 @@
 FROM ubuntu:latest
 
+RUN apt-get update && apt-get install -y curl wget git vim unar file
+
 # OpenSSH(SFTP server)
 WORKDIR /tmp
-RUN apt-get update && apt-get install -y curl wget git vim unar file
 RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir -p /var/run/sshd
 RUN ln -s /var/run/sshd /run/sshd
@@ -14,7 +15,7 @@ RUN echo 'sshd: all' >> /etc/hosts.deny
 RUN curl https://ipv4.fetus.jp/jp.txt | sed -e 's/^#.*//g' | grep -v '^$' | sed -e 's/^/sshd: /g' >> /etc/hosts.allow
 
 # Install all resource dependencies
-RUN apt-get update && apt-get install -y npm
+RUN apt-get install -y npm
 
 #
 WORKDIR /
