@@ -6,7 +6,6 @@ services:
       dockerfile: ./Dockerfile
       args:
         ROOT_PASSWORD: "${ROOT_PASSWORD:-password}"
-    pull_policy: build
     environment:
       PUID: 1000
       PGID: 1000
@@ -14,7 +13,7 @@ services:
       LANG: "C"
       LANGUAGE: "C"
       LC_ALL: "C"
-    restart: always
+    restart: unless-stopped
     tty: true
     tmpfs:
       - /tmp
@@ -45,49 +44,35 @@ services:
       driver: json-file
       options:
         max-size: "1024k"
-        max-file: "10"
+        max-file: "3"
 
   fivem-database-admin:
     container_name: fivem-database-admin
     image: phpmyadmin/phpmyadmin
-    pull_policy: build
     environment:
-      PUID: 1000
-      PGID: 1000
-      TZ: Asia/Tokyo
-      LANG: "C"
-      LANGUAGE: "C"
-      LC_ALL: "C"
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-password}"
       PMA_HOST: "fivem-database"
       PMA_ARBITRARY: 0
-    restart: always
-    tty: true
+    restart: unless-stopped
     tmpfs:
       - /run
       - /tmp
     ports:
       - "${PORT_DBMYADMIN:-30000-65530}:80"
+    depends_on:
+      - fivem-database
     logging: 
       driver: json-file
       options:
         max-size: "1024k"
-        max-file: "10"
+        max-file: "3"
 
   fivem-database:
     container_name: fivem-database
     image: mysql
-    pull_policy: build
     environment:
-      PUID: 1000
-      PGID: 1000
-      TZ: Asia/Tokyo
-      LANG: "C"
-      LANGUAGE: "C"
-      LC_ALL: "C"
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-password}"
-    restart: always
-    tty: true
+    restart: unless-stopped
     tmpfs:
       - /run
       - /tmp
@@ -99,21 +84,14 @@ services:
       driver: json-file
       options:
         max-size: "1024k"
-        max-file: "10"
+        max-file: "3"
 
   fivem-core:
     container_name: fivem-core
     image: spritsail/fivem:${txadmin_version:-latest}
-    pull_policy: build
     environment:
-      PUID: 1000
-      PGID: 1000
-      TZ: Asia/Tokyo
-      LANG: "C"
-      LANGUAGE: "C"
-      LC_ALL: "C"
       NO_DEFAULT_CONFIG: "1"
-    restart: always
+    restart: unless-stopped
     ports:
       - 30120:30120
       - 30120:30120/udp
@@ -122,6 +100,8 @@ services:
     tmpfs:
       - /run
       - /tmp
+    depends_on:
+      - fivem-database
     volumes:
       - type: volume
         source: fivem-core-config
