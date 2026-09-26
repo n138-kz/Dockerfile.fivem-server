@@ -50,12 +50,6 @@ services:
     container_name: fivem-database-admin
     image: phpmyadmin/phpmyadmin
     environment:
-      PUID: 1000
-      PGID: 1000
-      TZ: Asia/Tokyo
-      LANG: "C"
-      LANGUAGE: "C"
-      LC_ALL: "C"
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-password}"
       PMA_HOST: "fivem-database"
       PMA_ARBITRARY: 0
@@ -76,14 +70,7 @@ services:
     container_name: fivem-database
     image: mysql
     environment:
-      PUID: 1000
-      PGID: 1000
-      TZ: Asia/Tokyo
-      LANG: "C"
-      LANGUAGE: "C"
-      LC_ALL: "C"
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-password}"
-    tty: true
     restart: unless-stopped
     tmpfs:
       - /run
@@ -96,18 +83,12 @@ services:
       driver: json-file
       options:
         max-size: "1024k"
-        max-file: "10"
+        max-file: "3"
 
   fivem-core:
     container_name: fivem-core
     image: spritsail/fivem:${txadmin_version:-latest}
     environment:
-      PUID: 1000
-      PGID: 1000
-      TZ: Asia/Tokyo
-      LANG: "C"
-      LANGUAGE: "C"
-      LC_ALL: "C"
       NO_DEFAULT_CONFIG: "1"
     restart: unless-stopped
     ports:
